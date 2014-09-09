@@ -1,0 +1,41 @@
+OwnROM
+===========
+
+To get started with OwnROM manifest, assuming u are
+familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
+
+So to initialize your local repository using the OwnROM Source, use this commands:
+
+    cd Desktop
+    mkdir OwnROM
+    cd OwnROM
+    repo init -u git://github.com/OwnROM/android.git -b cm-11.0
+
+Sync up our source:
+
+    repo sync 
+
+Adding a flag like:
+
+    repo sync -j1, -j2, -j4, -j8 or -j16
+  
+
+may speed up a little, but prepare to wait longtime...
+
+After the repo is synced:
+
+    cd vendor/ownrom
+    ./get-prebuilts
+
+
+To build just enter these commands:
+
+    . build/envsetup.sh
+    brunch <device>
+
+
+Contact us at askowndroid@gmail.com if there is a problem...
+
+Note: Only devices we official support wil build without a problem, 
+contact me if u want to port or maintain a device by shooting me a 
+[Hangout](https://plus.google.com/u/0/+MarkVisser10021991).
