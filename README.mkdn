@@ -30,7 +30,7 @@ After the repo is synced:
 
 To build just enter these commands:
 
-    . build/envsetup.sh
+    . build/ownrom.sh
     brunch <device>
 
 
